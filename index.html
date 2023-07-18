@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <style>
+            body {
+                text-align: center;
+                justify-content: center;
+                margin-top: 100px;
+                margin-left: 200px;
+                
+            }
+
+            .a {
+                width: 100px;
+                height: 10px;
+                background-color: aqua;
+                
+                transition: 0.4s;
+                margin: 6px 0;
+            }
+
+            .hi .b {
+                transform: translate(0, 15px) rotate(-45deg);
+            }
+
+            .hi .d {
+                transform: translate(0, -15px) rotate(45deg);
+            }
+
+            .hi .c {
+                opacity: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="manu" onclick="myFunction(this)">
+            <div class="a b"></div>
+            <div class="a c"></div>
+            <div class="a d"></div>
+        </div>
+    </body>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("hi");
+        }
+    </script>
+</html>
